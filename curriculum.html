@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum di Sara Nuvoli, UX Designer con esperienza in comunicazione e pubblicità.">
+
+    <title>Sara Nuvoli - Curriculum</title>
+
+    <meta property="og:title" content="Sara Nuvoli - Curriculum" />
+    <meta property="og:description" content="Curriculum di Sara Nuvoli, UX Designer con esperienza in comunicazione e pubblicità." />
+    <meta property="og:image" content="assets/img/foto-autore.jpeg" />
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="assets/js/ReturnToTop.js"></script>
+
+</head>
+
+<body class="font-poppins">
+
+    <button id="returnTopButton" title="Ritorna ad inizio pagina" class="fixed bottom-5 right-8 z-50 p-5 rounded-full bg-blue-700 hidden"></button>
+
+    <header class="w-full sticky top-0 bg2 shadow-md">
+        <nav class="flex justify-between items-center px-8 py-2">
+            <a href="index.html" class="text-4xl font-bold testoDefault">SARA NUVOLI</a>
+            <ul class="flex space-x-5 text-lg nav-menu">
+                <li><a href="index.html#chi-sono" class="testoDefault2">Chi sono</a></li>
+                <li><a href="index.html#portfolio" class="testoDefault2">Portfolio</a></li>
+                <li><a href="curriculum.html" class="testoDefault2">Curriculum</a></li>
+                <li><a href="contatti.html" class="testoDefault2">Contatti</a></li>
+            </ul>
+            <span class="apriMenuLaterale mdi mdi-menu text-3xl cursor-pointer" onclick="openNav()"></span>
+        </nav>
+        <aside>
+            <div id="mySidenav" class="sidenav bg-blue-500 h-full fixed top-0 right-0 w-0 transition-all duration-500 shadow-lg">
+                <span class="mdi mdi-close text-4xl text-white cursor-pointer absolute top-2 right-8" onclick="closeNav()"></span>
+                <a href="index.html#chi-sono" class="text-white block py-3 pl-8 text-2xl hover:text-lg" onclick="closeNav()">Chi sono</a>
+                <a href="index.html#portfolio" class="text-white block py-3 pl-8 text-2xl hover:text-lg" onclick="closeNav()">Portfolio</a>
+                <a href="curriculum.html" class="text-white block py-3 pl-8 text-2xl hover:text-lg" onclick="closeNav()">Curriculum</a>
+                <a href="contatti.html" class="text-white block py-3 pl-8 text-2xl hover:text-lg" onclick="closeNav()">Contatti</a>
+            </div>
+        </aside>
+    </header>
+
+    <main class="text-center">
+        <div id="curriculum" class="py-20 px-10 bg2">
+            <h1 class="text-5xl font-bold">Curriculum</h1>
+            <p class="text-xl mt-4">Qui troverai una panoramica delle mie esperienze professionali e formative.</p>
+        </div>
+
+        <section id="esperienze" class="p-10 bg-white">
+            <h2 class="text-3xl font-bold">Esperienze Lavorative</h2>
+            <div class="mt-6">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold">Addetta vendita libreria</h3>
+                    <p class="text-lg text-gray-600">2018-2020</p>
+                    <p>Accoglienza clienti e assistenza nella ricerca dei libri. Suggerimenti letterari sulla base delle esigenze e dei desideri dei lettori. Organizzazione libri e rispetto delle politiche e della missione della libreria</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold">Florsheim, Sydney</h3>
+                    <p class="text-lg text-gray-600">2023-2024</p>
+                    <p><i>Assistant store manager</i>. Gestione del personale, gestione dell'inventario, assistenza clienti, organizzazione del negozio. Miglioramento significativo delle competenze linguistiche. Sviluppo di capacità di problem-solving e adattabilità in un ambiente di lavoro dinamico. Miglioramento delle capacità di analisi e interpretazione dei dati di vendita per ottimizzare le performance del negozio</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formazione" class="p-10 bg-gray-100">
+            <h2 class="text-3xl font-bold">Formazione Accademica</h2>
+            <div class="mt-6">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold">Università IULM, Milano</h3>
+                    <p class="text-lg text-gray-600">Comunicazione, media e pubblicità, 2018-2021</p>
+                    <p>Durante l'università, ho sviluppato competenze nella progettazione di strategie pubblicitarie e nel copywriting, migliorando la mia capacità di comunicare messaggi persuasivi.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold">Start2Impact, online</h3>
+                    <p class="text-lg text-gray-600">UX/UI Designer, 2022-2023</p>
+                    <p>Questo corso è stato fondamentale per farmi capire la mia inclinazione, dandomi la possibilità di creare dei progetti reali e mettermi alla prova.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competenze" class="p-10 bg-white">
+            <h2 class="text-3xl font-bold">Competenze</h2>
+            <ul class="mt-6 list-disc list-inside text-center">
+                <li>User Testing</li>
+                <li>User Research</li>
+                <li>Information Architecture</li>
+                <li>Wireframing e prototipazione</li>
+                <li>Figma</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg1 text-white p-16 text-center">
+        <div class="flex justify-center space-x-4 mb-6">
+            <a href="https://github.com" target="_blank" class="text-4xl hover:scale-150 transform transition-all"><span class="mdi mdi-github"></span></a>
+            <a href="https://wa.me/+393466329290" target="_blank" class="text-4xl hover:scale-150 transform transition-all"><span class="mdi mdi-whatsapp"></span></a>
+            <a href="tel:+393466329290" target="_blank" class="text-4xl hover:scale-150 transform transition-all"><span class="mdi mdi-phone"></span></a>
+            <a href="contatti.html" class="text-4xl hover:scale-150 transform transition-all"><span class="mdi mdi-send"></span></a>
+        </div>
+        <p>&copy; 2024 Sara Nuvoli</p>
+    </footer>
+
+</body>
+
+</html>
