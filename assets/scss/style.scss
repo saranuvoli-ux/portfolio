@@ -1,0 +1,194 @@
+$font-poppins: "Poppins", sans-serif;
+$bg-color: #FCF7F1;
+$text-color: #595959;
+$text-button-color: #2c5273;
+$color-sezione: #99ADBF;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-poppins;
+    font-style: normal;
+    background-color: $bg-color;
+    scroll-behavior: smooth;
+    color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $text-color;
+}
+
+.testoDefault {
+    color: $color-sezione;
+}
+
+.testoDefault2:hover {
+    color: $text-button-color;
+}
+
+.bg-pulsanti {
+    background-color: $text-button-color;
+}
+
+.bg1 {
+    background-color: $color-sezione;
+}
+
+.bg2 {
+    background-color: $bg-color;
+}
+
+#returnTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    outline: none;
+    cursor: pointer;
+    padding: 25px;
+    border: none;
+    border-radius: 50%;
+    background-image: url('../img/freccia.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-color: $text-button-color !important;
+}
+
+#chi-sono {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: $color-sezione;
+}
+
+#about-me-description {
+    flex: 1 1 200px;
+    max-width: 1000px;
+
+    h2 {
+        font-size: 44px;
+        color: #FFF;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    p {
+        color: #FFF;
+        font-size: 17px;
+        text-align: left;
+
+        a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 20px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#about-me-photo {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+#portfolio {
+    text-align: left;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: $color-sezione;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: -4px 0px 20px rgba(0, 0, 0, .2);
+
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #FFF;
+        display: block;
+        transition: 0.3s;
+
+        &:hover {
+            font-size: 28px;
+        }
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: #FFF;
+        cursor: pointer;
+    }
+}
+
+.apriMenuLaterale {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #chi-sono {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about-me-photo,
+    #about-me-description {
+        max-width: 100%;
+    }
+
+    #about-me-photo img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .apriMenuLaterale {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+}
+
+.immagine_default {
+    width: 100%;
+}
